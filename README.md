@@ -1,12 +1,30 @@
-beta-code-generator
-===================
+Bespin Code Generator
+=====================
 
-Python script to generate bespin-themed codes.
+Python script to generate codes. Prints out a shuffled list of words separated by a `-`, followed by a 3-digit random integer.
 
 Usage:
 
 ```
-./codes.py [optional random seed]
+./codes.py words.txt [optional random seed]
 ```
 
-Prints out a shuffled list of combination of characters and colors, followed by a 3-digit random integer.
+Where wordlist contains groups of words. One word per line, and groups separated by a blank line. A `words.txt` like this:
+
+```
+orange
+yellow
+blue
+
+dog
+cat
+cow
+```
+
+would produce codes like:
+
+```
+orange-cat-643
+blue-dog-217
+...
+```
